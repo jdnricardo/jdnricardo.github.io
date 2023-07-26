@@ -25,7 +25,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	/* margin: 30px auto; */
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -51,6 +51,9 @@ body {
 	font-size: 19px;
 	background-color: #FEFEFE;
 	color: #04143A;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
 }
 ol, ul {
 	list-style: none;
@@ -70,8 +73,10 @@ table {
 
 p {
 	color: #15171a;
-	font-size: 17;
-	line-height: 31px;
+	font-size: small;
+	line-height: 15px;
+	margin-top: 15px;
+	margin-bottom: 5px;
 }
 
 strong {
@@ -89,7 +94,7 @@ div , footer {
 
 .container {
 	max-width: 1100px;
-	height: auto;
+	height: -webkit-fill-available;
 	margin: 60px auto;
 }
 
@@ -137,9 +142,12 @@ h1.name {
 
 .sections {
 	vertical-align: top;
-	display: inline-block;
+	display: inline-flex;
 	width: 49.7%;
-	height: 50px;
+	height: fit-content;
+	flex-direction: column;
+	/* margin-inline: .3%; */
+	align-content: space-between;
 }
 
 .section-title {
@@ -149,23 +157,27 @@ h1.name {
 }
 
 .list-card {
-	margin: 30px 0;
+	margin: 7.5px 0;
+	display: flex;
+	justify-content: center;
 }
 
 .list-card .exp , .list-card div{
-	display: inline-block;
+	display: inline-flex;
 	vertical-align: top;
+	flex-direction: column;
 }
 
 .list-card .exp {
 	margin-right: 15px;
 	color: #4A90E2;
 	font-weight: 600;
-	width: 100px;
+	width: max-content;
+	margin-top: 5%;
 }
 
 .list-card div {
-	width: 70%;
+	width: 74%;
 }
 
 .list-card h3 {
@@ -173,7 +185,8 @@ h1.name {
 	font-weight: 600;
 	color: #5B6A9A;
 	line-height: 26px;
-	margin-bottom: 8px;
+	/* margin-bottom: 8px; */
+	margin-top: 5%;
 }
 
 .list-card div span {
@@ -266,21 +279,21 @@ h1.name {
 
 ol {
 	position: relative;
-	display: block;
+	display: inline-flex;
 	margin: 100px 0;
 	height: 2px;
 	background: #EEF0F7;
-
+	flex-direction: row;
 }
 ol::before,
 ol::after {
 	content: "";
-	position: absolute;
-	top: -10px;
-	display: block;
+	/* position: absolute; */
+	/* top: -10px; */
+	display: inline-flex;
 	width: 0;
 	height: 0;
-  	border-radius: 10px;
+	border-radius: 10px;
 	border: 0px solid #31708F;
 }
 ol::before {
@@ -297,14 +310,17 @@ ol::after {
 /* ---- Timeline elements ---- */
 li {
 	position: relative;
-	display: inline-block;
+	display: inherit;
+	flex-direction: column;
 	float: left;
 	width: 25%;
-  	height: 50px;
+	height: max-content;
 }
 li .line {
-  position: absolute;
-  top: -47px;
+  position: relative;
+  display: inherit;
+  content: "";
+  /* top: -47px; */
   left: 1%;
   font-size: 20px;
   font-weight: 600;
@@ -312,20 +328,21 @@ li .line {
 }
 li .point {
 	content: "";
-	top: -7px;
+	top: -1%;
 	left: 0%;
-	display: block;
-	width: 8px;
-	height: 8px;
-	border: 4px solid #fff;
+	display: inherit;
+	/* flex: 8px; */
+	border: 4px solid #4A90E2;
 	border-radius: 10px;
 	background: #4A90E2;
-  position: absolute;
+	/* align-content: flex-start; */
+	/* justify-content: flex-start; */
+	position: absolute;
 }
 li .description {
-  display: none;
+  display: flex;
   padding: 10px 0;
-  margin-top: 20px;
+  margin-top: 10px;
   position: relative;
   font-weight: normal;
   z-index: 1;
@@ -347,19 +364,17 @@ li .description {
   left: 43%;
 }
 
-
 .timeline .date{
 	font-size: 14px;
+	margin-top: 5%;
 	color: #81899C;
 	font-weight: 300;
+	display: inherit;
 }
 
 /* ---- Hover effects ---- */
 li:hover {
   color: #48A4D2;
-}
-li .description {
-  display: block;
 }
 
 /*timeline ends*/
@@ -372,6 +387,11 @@ li .description {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
+		display: flex;
+		flex-direction: row;
+		/* align-content: flex-start; */
+		/* justify-content: flex-start; */
+		/* align-items: flex-start; */
 	}
 	.cards {
 		margin-top: 250px;
