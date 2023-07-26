@@ -82,10 +82,27 @@ div , footer {
 	box-sizing: border-box;
 }
 
+footer {
+	margin-left: 2%;
+	margin-top: 97%;
+}
 /* Reset ends */
 
 
 /*Hero section*/
+.meta-container {
+	position: relative;
+	display: block;
+	height: 400%;
+	width: 100%;
+}
+
+.timeline-container {
+	max-width: 98%;
+	margin-top: 60%;
+	height: auto;
+	margin: auto;
+}
 
 .container {
 	max-width: 1100px;
@@ -124,6 +141,10 @@ h1.name {
 	margin-top: 10px;
 }
 
+.address {
+	display: inline-block;
+}
+
 .lead {
 	font-size: 44px;
 	font-weight: 300;
@@ -133,39 +154,71 @@ h1.name {
 
 /*hero ends*/
 
-/*skills & intrests*/
+/*skills & interests*/
 
 .sections {
 	vertical-align: top;
-	display: inline-block;
-	width: 49.7%;
-	height: 50px;
+	display: inline-flex;
+	width: 49%;
+	flex-direction: column;
+	flex-wrap: nowrap;
 }
 
 .section-title {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 15px;
+	display: inherit;
+	width: inherit;
 }
 
 .list-card {
-	margin: 30px 0;
+	margin: 15px 0;
+	/* height: 100px; */
+	/* overflow: hidden; */
+	/* white-space: nowrap; */
+	/* text-overflow: ellipsis; */
+	display: inline-flex;
+	/* text-wrap: wrap; */
+	width: 95%;
+	/* flex-wrap: nowrap; */
+	justify-content: flex-start;
+	align-content: flex-end;
+	align-items: flex-start;
+}
+
+.list-card .show {
+	height: auto;
+	display: inline-block;
+	overflow: visible;
+	white-space: normal;
 }
 
 .list-card .exp , .list-card div{
-	display: inline-block;
+	display: inline-flex;
+	/* display: inline-block; */
 	vertical-align: top;
+	flex-direction: column;
+	/* flex-wrap: wrap; */
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+	/* flex-shrink: inherit; */
 }
 
 .list-card .exp {
-	margin-right: 15px;
+    /* width: fit-content; */
+}
+
+.list-card .exp {
+	margin-right: 8px;
 	color: #4A90E2;
 	font-weight: 600;
-	width: 100px;
+	width: 29%;
 }
 
 .list-card div {
-	width: 70%;
+	width: 100%;
 }
 
 .list-card h3 {
@@ -174,12 +227,22 @@ h1.name {
 	color: #5B6A9A;
 	line-height: 26px;
 	margin-bottom: 8px;
+	/* overflow: visible; */
+	/* text-overflow: unset; */
+	/* width: inherit; */
+	display: inline-flex;
+	/* flex-wrap: wrap; */
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .list-card div span {
 	font-size: 16px;
 	color: #81899C;
-	line-height: 22px;
+	width:  inherit;
+	display: inherit;
+	flex-wrap: nowrap;
 }
 
 /*skill and interests ends*/
@@ -202,7 +265,6 @@ h1.name {
 	vertical-align: top;
 	border-radius: 10px;
 	text-align: center;
-	padding-top: 50px
 }
 
 .card-active , .card:hover{
@@ -270,8 +332,8 @@ ol {
 	margin: 100px 0;
 	height: 2px;
 	background: #EEF0F7;
-
 }
+
 ol::before,
 ol::after {
 	content: "";
@@ -335,6 +397,7 @@ li .description {
   line-height: 25px;
   color: #5B6A9A;
 }
+
 .description::before {
   content: '';
   width: 0; 
@@ -372,9 +435,14 @@ li .description {
 	.container {
 		padding: 15px;
 		margin: 0px auto;
+		position: relative;
 	}
 	.cards {
 		margin-top: 250px;
+	}
+
+	.footer {
+		margin-top: 80%;
 	}
 }
 
@@ -406,9 +474,19 @@ li .description {
 		background-color: rgba(0,0,0,0);
 	}
 
+	.timeline-container {
+        margin-top: 70%; /* Adjust this value as needed */
+		max-width: 95%;
+    }
+
 	.timeline li{
+	  display: relative;
 		margin-top: 70px;
 		height: 150px;
+	}
+
+	.footer {
+		margin-top: 100%;
 	}
 }
 
@@ -425,9 +503,13 @@ li .description {
 		float: left;
 	}
 
-	.timeline{
+	.timeline {
 		display: none;
-		}
+	}
+
+	.timeline-container {
+        display: none; /* Hide the timeline on small screens */
+    }
 
 	.job-title {
 		position: absolute;
@@ -443,11 +525,11 @@ li .description {
 		line-height: 28px;
 	}
 	.container {
-		margin: 0px;
+		margin: 5px;
 		padding: 0 15px;
 	}
 	footer {
-		margin-top: 2050px;
+		margin-top: 98%;
 	}
 	}
 
