@@ -37,7 +37,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-a{
+a {
 	text-decoration: none;
 	text-transform: none;
 	color: #4A90E2;
@@ -75,8 +75,9 @@ p {
 	color: #15171a;
 	font-size: small;
 	line-height: 15px;
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-bottom: 5px;
+	padding-left: 1px;
 }
 
 strong {
@@ -352,6 +353,29 @@ li .description {
   line-height: 25px;
   color: #5B6A9A;
 }
+
+.description-container {
+	position: relative;
+	height: 75px;
+}
+  
+.expanded-description {
+display: none;
+position: absolute;
+bottom: 85px;
+height: min-content;
+width: 98%;
+z-index: 1;
+background-color: white;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.description-container:hover .expanded-description {
+display: block;
+}
+
 .description::before {
   content: '';
   width: 0; 
@@ -376,6 +400,7 @@ li .description {
 li:hover {
   color: #48A4D2;
 }
+
 
 /*timeline ends*/
 
