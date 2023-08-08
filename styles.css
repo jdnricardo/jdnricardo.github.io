@@ -242,6 +242,7 @@ h1.name {
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 15px;
+	/* margin-top: 5px; */
 }
 
 .list-card {
@@ -287,28 +288,40 @@ h1.name {
 /*skill and interests ends*/
 
 /* Achievements */
+h2 {
+	margin-top: 5px;
+	justify-content: flex-start;
+}
 
+.card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.cards-section-title{
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	padding-left:  15px;
+}
 
 .cards {
-	max-width: fit-content;
+	/* max-width: fit-content; */
 	display: inline-flex;
 	flex-direction: row;
 	/* align-content: center; */
-	justify-content: flex-start;
-	/* align-items: center; */
+	justify-content: space-around;
+	align-items: stretch;
 	flex-wrap: wrap;
-	max-height: fit-content;
-}
-
-.cards-section-title {
-	margin: 15px auto;
-	width: 97.5%;
-	height: 100px;
-	padding-top: 60px;
+	/* max-height: fit-content; */
 }
 
 .cards .card {
-	width: 47.9%;
+	width: 31.3%;
 	height: fit-content;
 	background-color: #EEF0F7;
 	display: flex;
@@ -321,7 +334,7 @@ h1.name {
 	padding-bottom: 15px;
 	padding-right: 5px;
 	flex-direction: column;
-	align-content: space-around;
+	/* align-content: space-around; */
 }
 
 .card:hover {
@@ -459,7 +472,6 @@ li .description {
 	padding: 5px 5px;
 	margin-top: 10px;
 	position: relative;
-	font-weight: normal;
 	z-index: 1;
 	max-width: 95%;
 	font-size: 18px;
@@ -479,6 +491,14 @@ li .description {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	/* align-items: flex-end; */
+}
+
+.location {
+	padding: 5px 5px;
+	margin-top: 2.5px;
+	line-height: 15px;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 .point-container:hover .expanded-description {
@@ -537,7 +557,7 @@ li .line:hover {
 
 	.cards {
 	display: flex;
-	margin-top: 150px;
+	margin-top: 5px;
 	}
 }
 
@@ -548,12 +568,13 @@ li .line:hover {
 	}
 
 	.cards {
-		margin-top: 150px;
+		margin-top: 5px;
 	}
 
 	.card {
 		padding: 15px;
 		text-align: left;
+		width: 48.7%;
 	}
 
 	.card h2 {
