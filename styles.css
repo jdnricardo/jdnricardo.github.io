@@ -183,6 +183,7 @@ footer {
 	width: 100%;
 	flex-direction: row;
 	display: flex;
+	justify-content: space-around;
 }
 
 .hero {
@@ -234,8 +235,8 @@ h1.name {
 	height: fit-content;
 	flex-direction: column;
 	/* margin-inline: .3%; */
-	align-content: flex-start;
-	justify-content: flex-end;
+	/* justify-content: flex-end; */
+	align-content: space-around;
 }
 
 .section-title {
@@ -249,13 +250,6 @@ h1.name {
 	margin: 7.5px 0;
 	display: flex;
 	justify-content: center;
-}
-
-.list-card .exp,
-.list-card div {
-	display: inline-flex;
-	vertical-align: top;
-	flex-direction: column;
 }
 
 .list-card .exp {
@@ -299,6 +293,7 @@ h2 {
 	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
+	margin-bottom: 50px;
 }
 
 .cards-section-title{
@@ -310,14 +305,15 @@ h2 {
 }
 
 .cards {
-	/* max-width: fit-content; */
+	max-width: max-content;
+	width: 100%;
 	display: inline-flex;
 	flex-direction: row;
-	/* align-content: center; */
+	align-content: center;
 	justify-content: space-around;
 	align-items: stretch;
 	flex-wrap: wrap;
-	/* max-height: fit-content; */
+	max-height: max-content;
 }
 
 .cards .card {
@@ -386,10 +382,26 @@ h2 {
 }
 
 .skill-meta span {
-	color: #81899C;
+	opacity: 0%;
 	line-height: 20px;
 	font-size: 16px;
+	max-height: 0px;
+	overflow: hidden;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	transition: 0.5s;
 }
+
+.card:hover .skill-meta span {
+	opacity: 100%;
+	color: #81899C;
+	max-height: 200px;
+	height: fit-content;
+	overflow: visible;
+	white-space: normal;
+}
+
 
 /* Achievements ends */
 
@@ -524,21 +536,80 @@ li .description {
 
 .timeline .date {
 	font-size: 14px;
+	margin-left: 1%;
 	margin-top: 5%;
 	color: #81899C;
 	font-weight: 300;
 	display: inherit;
 }
 
-/* ---- Hover effects ---- */
 li .line:hover {
 	color: #48A4D2;
 }
 
-
 /*timeline ends*/
 
+/* awards/publications starts */
 
+.awards { 
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.award {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.award-description {
+	display: block;
+	max-height: 0px;
+	height: max-content;
+	position: relative;
+	background-color: #EEF0F7;
+	margin: 5px 5px 0px 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	transition: 0.5s;
+	padding: 0px 5px 0px 10px;
+}
+
+.award:hover .award-description {
+	max-height: 200px;
+	overflow: visible;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	white-space: normal;
+}
+
+.awards::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #31708F;
+	position: absolute;
+	top: -5px;
+	left: 43%;
+	display: none;
+}
+
+p.desc-text {
+	color: #EEF0F7;
+	transition: 0.5s;
+}
+
+.award:hover p.desc-text {
+	color: #04143A;
+}
+/* awards/publications ends */
 
 /* Media queries*/
 
