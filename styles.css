@@ -480,6 +480,11 @@ ol::after {
 
 /* ---- Timeline elements ---- */
 
+.sub {
+	display:flex;
+	flex-direction:column;
+}
+
 li {
 	position: relative;
 	display: inherit;
