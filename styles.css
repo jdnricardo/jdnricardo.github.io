@@ -718,7 +718,7 @@ li.project:hover a {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	transition: 1s;
-	border-radius: 10%;
+	border-radius: 5%;
 }
 
 .department:hover .list-cards {
@@ -729,7 +729,7 @@ li.project:hover a {
 .department:hover h3.dept {
 	color: #4a90e2;
 	font-weight: bold;
-
+}
 /* Research/Teaching ends */
 
 /* Media queries*/
