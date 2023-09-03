@@ -293,6 +293,8 @@ p.about-me {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
+	width: 100%;
+	height: max-content;
 }
 
 .list-card .exp {
@@ -341,6 +343,7 @@ h2 {
 	align-items: flex-start;
 	width: 100%;
 	margin-bottom: 50px;
+	height: max-content;
 }
 
 .cards-section-title{
@@ -360,12 +363,12 @@ h2 {
 	justify-content: flex-start;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	height: 175px;
+	height: max-content;
+	max-height: max-content;
 }
 
 .cards .card {
 	width: 31.3%;
-	height: fit-content;
 	background-color: #EEF0F7;
 	display: flex;
 	margin: 7px 5px;
@@ -378,6 +381,7 @@ h2 {
 	padding-right: 5px;
 	flex-direction: column;
 	align-content: space-around;
+	height: max-content;
 }
 
 .card:hover {
@@ -386,9 +390,20 @@ h2 {
 	background-color: #fff;
 	box-shadow: 0px 5px 50px -8px #ddd;
 	cursor: pointer;
+	height: max-content;
+}
+.card:hover .skill-meta span {
+	opacity: 100%;
+	color: #81899C;
+	max-height: 200px;
+	height: fit-content;
+	overflow: visible;
+	white-space: normal;
 }
 
-.skill-level {padding-left: 15px;max-width: max-content;}
+.skill-level {
+	padding-left: 15px;
+	max-width: max-content;}
 
 .skill-level span {
 	font-size: 35px;
@@ -432,15 +447,6 @@ h2 {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	transition: 0.5s;
-}
-
-.card:hover .skill-meta span {
-	opacity: 100%;
-	color: #81899C;
-	max-height: 200px;
-	height: fit-content;
-	overflow: visible;
-	white-space: normal;
 }
 
 
@@ -705,7 +711,7 @@ li.project:hover a {
 }
 
 .department {
-	height: 600px;
+	max-height: 750px;
 	margin-left: 5px;
 	max-width: 95%;
 }
@@ -719,6 +725,7 @@ li.project:hover a {
 	white-space: nowrap;
 	transition: 1s;
 	border-radius: 5%;
+	padding: 0px 0px 20px 10px;
 }
 
 .department:hover .list-cards {
@@ -732,5 +739,17 @@ li.project:hover a {
 }
 /* Research/Teaching ends */
 
-/* Media queries*/
-	
+/* Media queries -- rewrite and wrap in media queries */
+
+@media all and (max-width: 26em) {
+	.cards {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.card {
+		width:max-content;
+	}
+
+}
