@@ -114,7 +114,7 @@ section {
 a {
 	text-decoration: none;
 	text-transform: none;
-	color: #4a90e2;
+	color: #78a8d1;
 }
 
 body {
@@ -460,7 +460,7 @@ ol {
 	display: flex;
 	margin: 50px auto;
 	height: 2px;
-	background: #EEF0F7;
+	background: #3a2d22;
 	flex-direction: row;
 }
 
@@ -484,7 +484,7 @@ ol::after {
 	right: -10px;
 	border: 0px solid transparent;
 	border-right: 0;
-	border-left: 20px solid #31708F;
+	border-left: 20px solid #8f5145;
 	border-radius: 3px;
 }
 
@@ -542,7 +542,7 @@ li .description {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 25px;
-	color: #5B6A9A;
+	color: #6a6a53;
 }
 
 .expanded-description {
@@ -552,7 +552,7 @@ li .description {
 	z-index: 1;
 	background-color: white;
 	padding: 10px;
-	top: -180px;
+	top: -200px;
 	left: -5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
