@@ -369,7 +369,7 @@ h2 {
 
 .cards .card {
 	width: 31.3%;
-	background-color: #99a8a5;
+	background-color: #c9aa82;
 	display: flex;
 	margin: 7px 5px;
 	vertical-align: top;
@@ -408,7 +408,7 @@ h2 {
 .skill-level span {
 	font-size: 35px;
 	font-weight: 300;
-	color: #99a8a5;
+	color: #272220;
 }
 
 .skill-level h2 {
@@ -416,7 +416,7 @@ h2 {
 	font-weight: 300;
 	display: inline-flex;
 	vertical-align: top;
-	color: #c9aa82;
+	color: #99a8a5;
 	letter-spacing: -5px;
 }
 
