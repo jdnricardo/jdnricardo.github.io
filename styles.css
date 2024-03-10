@@ -220,7 +220,7 @@ h1.name {
 	display: block;
 	font-size: 24px;
 	font-weight: 300;
-	color: #81899C;
+	color: #8f5145;
 	margin-top: 10px;
 	padding-left: 15px;
 	width: max-content;
@@ -299,7 +299,7 @@ p.about-me {
 
 .list-card .exp {
 	margin-right: 15px;
-	color: #4A90E2;
+	color: #6a6a53;
 	font-weight: 600;
 	width: max-content;
 	margin-top: 5%;
@@ -315,7 +315,7 @@ p.about-me {
 .list-card h3 {
 	font-size: 20px;
 	font-weight: 600;
-	color: #5B6A9A;
+	color: #9d3d2d;
 	line-height: 26px;
 	/* margin-bottom: 8px; */
 	margin-top: 5%;
@@ -369,7 +369,7 @@ h2 {
 
 .cards .card {
 	width: 31.3%;
-	background-color: #EEF0F7;
+	background-color: #99a8a5;
 	display: flex;
 	margin: 7px 5px;
 	vertical-align: top;
