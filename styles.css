@@ -460,7 +460,7 @@ ol {
 	display: flex;
 	margin: 50px auto;
 	height: 2px;
-	background: #3a2d22;
+	background: #cbc7b9;
 	flex-direction: row;
 }
 
@@ -550,9 +550,9 @@ li .description {
 	max-width: max-content;
 	position: absolute;
 	z-index: 1;
-	background-color: white;
+	background-color: #cbc7b9;
 	padding: 10px;
-	top: -200px;
+	top: -190px;
 	left: -5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -576,7 +576,7 @@ li .description {
 }
 
 .point-container .line a {
-	color: #394165;
+	color: #6a6a53;
 	transition: 0.5s;
 }
 
