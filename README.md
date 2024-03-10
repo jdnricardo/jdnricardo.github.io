@@ -1,2 +1,2 @@
-# psuechting.github.io
+# jricardo.github.io
 Professional Website
