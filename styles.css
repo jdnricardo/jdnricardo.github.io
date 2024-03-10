@@ -576,7 +576,7 @@ li .description {
 }
 
 .point-container .line a {
-	color: #5b6a9a;
+	color: #394165;
 	transition: 0.5s;
 }
 
@@ -661,7 +661,7 @@ p.desc-text {
 }
 
 h3 a.link {
-	color: #5B6A9A;
+	color: #394165;
 	font-weight: 600;
 	transition: 0.5s;
 }
