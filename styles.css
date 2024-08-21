@@ -123,8 +123,8 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	font-size: 19px;
-	background-color: #eadac5;
-	color: #3a2d22;
+	background-color: #fcfcfc /*#eadac5;*/
+	color: #222 /*#3a2d22;*/
 	display: flex;
 	flex-direction: column;
 	/* align-content: flex-start; */
